@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 1005;
+    height: 100%;
+    background-color: rgb(16, 150, 71);
+    display: flex;
+    justify-content: center;  /*On X axis*/
+    align-items: center; /* On Y axis*/
+}
+
+#panel{
+    overflow: hidden; /* jo ptop ka  color/content  box ke ke 
+    bahar ja raha hai use hidden kr deta hai */
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+#ptop{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(2, 63, 28);
+    padding: 10px 20%;
+    align-items: center;
+    color: #fff;
+}
+.elem{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.box{
+    color: #000;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 0px 10px;
+    
+    
+}
+#pbtm{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    height: calc(100% -10px);
+    align-items: center;
+    justify-content: center;
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(33, 192, 102);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 500;
+
+}
+.bubble:hover{
+    background-color: rgb(4, 94, 43);
+    cursor: pointer;
+}
